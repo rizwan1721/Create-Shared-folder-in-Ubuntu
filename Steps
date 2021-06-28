@@ -1,0 +1,11 @@
+1) sudo apt install build-essential dkms linux-headers-$(uname -r)
+2) Open VM , go to Device - shared folder - shared folder settins =>add path and select auto mount
+3) sudo shutdown-r now
+4) Device - Insert guest addition Cd image and press cancel in popup
+5) OPen files - open Vbox Guest addition and right click to open terminal
+6) ls -l
+7) sudo sh VBoxLinuxAdditions.run
+8) sudo shutdown-r now
+9) sudo usermod -a -G vboxsf (user)
+10) sudo chown -R <user>:users /media/shared_folder
+11) sudo shutdown -r now
